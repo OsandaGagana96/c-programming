@@ -1,4 +1,2 @@
-test: test.o
-	gcc -o test test.o
-test.o: test.c
-	gcc -std=gnu99 -pedantic -Wall -c test.c
+test: test.c
+	gcc -o test -pedantic -std=gnu99 -Wall -Werror test.c
